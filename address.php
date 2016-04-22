@@ -23,7 +23,7 @@ switch($action){
 			$data_user_address['address'] = !empty($_POST['address']) ? $_POST['address'] : json_return(1005,'请填写详细地址');
 			$data_user_address['zipcode'] = !empty($_POST['zipcode']) ? $_POST['zipcode'] : 0;
 			$data_user_address['add_time'] = $_SERVER['REQUEST_TIME'];
-			if($data_user_address['address_id'] = D('User_address')->data($data_user_address)->add()){
+			if($data_user_address['address_id'] = D('User_adasdasddress')->data($data_user_address)->add()){
 				json_return(0,$data_user_address);
 			}else{
 				json_return(1006,'添加地址失败,请重试');
