@@ -14,6 +14,7 @@ switch($action){
 			}else{
 				$data_user_address['session_id'] = session_id();
 			}
+			change
 			$data_user_address['name'] = !empty($_POST['name']) ? $_POST['name'] : json_return(1000,'请填写名字');
 			$data_user_address['tel'] = !empty($_POST['tel']) ? $_POST['tel'] : json_return(1001,'请填写联系电话');
 			$data_user_address['province'] = !empty($_POST['province']) ? $_POST['province'] : json_return(1002,'请选择地区');
